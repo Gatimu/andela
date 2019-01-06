@@ -74,12 +74,50 @@ body {
 }
 
 .happy_people_img {
-  background-color: #aaa;
+  min-height:200px;
   background-image: url("../assets/images/happy_people.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    height: 80%;
+    height: 70%;
+    text-align: center;
+}
+
+.happy_people_img h1{
+    padding-top: 20%;
+}
+
+.happy_people_img h3{
+    width: 30%;
+    background-color: #1abc9c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 35%;
+}
+
+.meetup_poster{
+  min-height: 200px;
+}
+
+.meetup_date{
+    padding: 5px;
+    border-radius: 4px;
+    background-color: white;
+    width: 70px;
+    text-align: center;
+    color: #f63052;
+    font-size: 20px;
+    margin-left: 2px;
+}
+
+.meetup_place{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
 }
 
 /* Footer */
@@ -104,6 +142,27 @@ body {
   .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10 {   
     flex-direction: column;
   }
+  
+  .happy_people_img {
+    min-height:200px;
+    background-image: url("../assets/images/happy_people.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      height: 20%;
+  }
+  
+  .happy_people_img h3{
+    width: 80%;
+    background-color: #1abc9c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10%;
+}
 }
 
 
@@ -120,7 +179,7 @@ input[type=text], select {
 
 input[type=submit] {
   width: 100%;
-  background-color: #4CAF50;
+  background-color: #1abc9c;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -162,6 +221,7 @@ input[type=submit]:hover {
 	display: block;
 	float:left;
 	margin: 1% 0 1% 1.6%;
+    min-height:200px; 
 }
 
 .col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
