@@ -66,6 +66,13 @@ body {
   padding: 20px;
 }
 
+.main_container{
+  margin: 0 auto;
+  width: 80%;
+  background-color: white;
+  padding: 20px;
+}
+
 /* Fake image, just for this example */
 .fakeimg {
   background-color: #aaa;
@@ -115,9 +122,20 @@ body {
 }
 
 .meetup_place{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+}
+
+.meetup_title{
+    padding: 5px;
+    color: #f63052;
     font-size: 20px;
+}
+
+.meetup_host{
+    display: inline-block;
+    font-size: 11px;
 }
 
 /* Footer */
@@ -153,16 +171,22 @@ body {
   }
   
   .happy_people_img h3{
-    width: 80%;
-    background-color: #1abc9c;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-left: 10%;
-}
+        width: 80%;
+        background-color: #1abc9c;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 10%;
+    }
+    .main_container{
+        margin: 0 auto;
+        width: 100%;
+        background-color: white;
+        padding: 10px;
+      }
 }
 
 
