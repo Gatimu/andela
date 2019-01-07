@@ -41,9 +41,8 @@
     <h2>Admin</h2>
     <div class="navbar admin_navbar">
         <a href="#">Home</a>
-        <a href="#">Find a Group</a>
-        <a href="#">Join</a>
-        <a href="#">Signup</a>
+        <a href="#">Add Meetup</a>
+        <a href="#">View Meetups</a>
     </div>
     
     
@@ -59,19 +58,17 @@
    <div>
         <form action="/action_page.php">
           <label for="fname">Meetup Name</label>
-          <input type="text" id="username" name="firstname" placeholder="Your username">
+          <input type="text" id="meetup_name" name="meetup_name" placeholder="Meetup Name">
           
           <label for="fname">Location</label>
-          <input type="text" id="username" name="firstname" placeholder="Your username">
+          <input type="text" id="meetup_location" name="meetup_location" placeholder="Meetup Location">
           
           <label for="fname">Hosted by</label>
-          <input type="text" id="username" name="firstname" placeholder="Your username">
+          <input type="text" id="meetup_host" name="meetup_host" placeholder="Meetup Host">
           
           <label for="fname">Email</label>
-          <input type="text" id="username" name="firstname" placeholder="Your username">
-          
-          <label for="fname">Mobile Number</label>
-          <input type="text" id="username" name="firstname" placeholder="Your username">
+          <input type="text" id="meetup_host_email" name="meetup_host_email" placeholder="Meetup Host Location">
+
       
           <label for="lname">Meetup Description</label>
           <textarea rows="20">
@@ -79,7 +76,7 @@
           </textarea>
           
           <label for="lname">Meetup date</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <input type="text" id="meetup_date" name="meetup_date" placeholder="Meetup Date">
         
           <input type="submit" value="Save meetup" style="width: 200px; float: right;">
         </form>
