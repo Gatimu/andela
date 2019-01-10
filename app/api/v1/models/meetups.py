@@ -5,7 +5,7 @@ from datetime import datetime
 meetup_model = []
 
 
-class MeetupsModel:
+class Meetups_Model:
 
     def __init__(self):
         self.db = meetup_model

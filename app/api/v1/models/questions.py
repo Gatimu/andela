@@ -8,6 +8,18 @@ class Questions():
     def __init__(self):
         self.db = questions
 
+
+    """Function returns all questions"""
+    def get_questions(self):
+        return self.db
+
+
+    """Function returns single quesetion"""
+    def get_question(self, id):
+        qs = [temp_qs for temp_qs in self.db
+            if temp_qs["id"] == id]
+        return qs
+
     """Function saves question posted by user"""
     def save_question(self, details):
         """ Creates a question to a meetup record """
@@ -40,7 +52,7 @@ class Questions():
     """Function upvotes a question"""
     def upvote_question(self, question_id):
         question = [qs for qs in self.db
-                  if qs["id"] == id]
+                  if qs["id"] == question_id]
 
         # fetch current vote count and increase by 1
 
@@ -56,7 +68,7 @@ class Questions():
     """Function downvotes a question"""
     def downvote_question(self, question_id):
         question = [qs for qs in self.db
-                  if qs["id"] == id]
+                  if qs["id"] == question_id]
 
         # fetch current vote count and decrease by 1
 
